@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CircleMenu" customModule="Shapes" customModuleProvider="target">
+            <connections>
+                <outlet property="circleButton" destination="e4J-9y-NGL" id="K45-aY-fdE"/>
+                <outlet property="menuButton" destination="LEd-bJ-ztb" id="h1D-bQ-BQa"/>
+                <outlet property="starButton" destination="zgB-K8-mYh" id="mcQ-62-8LH"/>
+                <outlet property="triangleButton" destination="3ng-2i-LfD" id="EGh-4n-ryZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4J-9y-NGL" userLabel="circleButton">
+                    <rect key="frame" x="68" y="68" width="44" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="ZUk-NI-w0B"/>
+                        <constraint firstAttribute="height" constant="44" id="keA-6l-xXt"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="circleButtonAction:" destination="-1" eventType="touchUpInside" id="rd0-CT-604"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ng-2i-LfD" userLabel="triangleButton">
+                    <rect key="frame" x="68" y="68" width="44" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Goi-H0-reg"/>
+                        <constraint firstAttribute="height" constant="44" id="he3-RJ-nf1"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="triangleButtonAction:" destination="-1" eventType="touchUpInside" id="O30-bp-vU8"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgB-K8-mYh" userLabel="starButton">
+                    <rect key="frame" x="68" y="68" width="44" height="44"/>
+                    <color key="backgroundColor" red="0.23137254900000001" green="0.34509803919999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="A4F-Ts-AgT"/>
+                        <constraint firstAttribute="width" constant="44" id="Fs3-hG-5ds"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="0.23137254900000001" green="0.34509803919999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="starButtonAction:" destination="-1" eventType="touchUpInside" id="Btd-5J-M5f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEd-bJ-ztb" userLabel="menuButton">
+                    <rect key="frame" x="58" y="58" width="65" height="65"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.10980392160000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="NIz-k4-0ez"/>
+                        <constraint firstAttribute="width" constant="65" id="jWE-V7-78r"/>
+                    </constraints>
+                    <state key="normal" title="- - -" image="menuIcon">
+                        <color key="titleColor" red="0.8862745098" green="0.10980392160000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="menuButtonAction:" destination="-1" eventType="touchUpInside" id="Wc9-Ib-DpO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LEd-bJ-ztb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="0.5" id="0ZX-Jz-XNp"/>
+                <constraint firstItem="zgB-K8-mYh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HHK-lJ-jTM"/>
+                <constraint firstItem="3ng-2i-LfD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="O5y-4U-1Qg"/>
+                <constraint firstItem="LEd-bJ-ztb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="0.5" id="Y85-sf-V25"/>
+                <constraint firstItem="zgB-K8-mYh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZZc-5g-Anu"/>
+                <constraint firstItem="3ng-2i-LfD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aPY-vN-XQR"/>
+                <constraint firstItem="e4J-9y-NGL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="k5H-0f-6KR"/>
+                <constraint firstItem="e4J-9y-NGL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lki-iK-Aeh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="49.275362318840585" y="-343.52678571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menuIcon" width="700" height="516"/>
+    </resources>
+</document>
